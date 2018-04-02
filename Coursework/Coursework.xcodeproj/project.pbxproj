@@ -34,6 +34,8 @@
 		3B4B8B3C207214940023506B /* road18.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B28207214940023506B /* road18.png */; };
 		3B4B8B3D207214940023506B /* road19.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B29207214940023506B /* road19.png */; };
 		3B4B8B3E207214940023506B /* road20.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B2A207214940023506B /* road20.png */; };
+		3B4B8B40207216220023506B /* cocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B8B3F207216220023506B /* cocoa.swift */; };
+		3B4B8B42207216CC0023506B /* car0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B41207216CC0023506B /* car0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		3B4B8B28207214940023506B /* road18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road18.png; path = "../../Test area/images/images/road18.png"; sourceTree = "<group>"; };
 		3B4B8B29207214940023506B /* road19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road19.png; path = "../../Test area/images/images/road19.png"; sourceTree = "<group>"; };
 		3B4B8B2A207214940023506B /* road20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road20.png; path = "../../Test area/images/images/road20.png"; sourceTree = "<group>"; };
+		3B4B8B3F207216220023506B /* cocoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cocoa.swift; sourceTree = "<group>"; };
+		3B4B8B41207216CC0023506B /* car0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car0.png; path = "../../Test area/images/images/car0.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 				3B4B8AEF207213880023506B /* Assets.xcassets */,
 				3B4B8AF1207213880023506B /* LaunchScreen.storyboard */,
 				3B4B8AF4207213880023506B /* Info.plist */,
+				3B4B8B3F207216220023506B /* cocoa.swift */,
 			);
 			path = Coursework;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 		3B4B8B16207214770023506B /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
+				3B4B8B41207216CC0023506B /* car0.png */,
 				3B4B8B17207214940023506B /* road1.png */,
 				3B4B8B18207214940023506B /* road2.png */,
 				3B4B8B19207214940023506B /* road3.png */,
@@ -314,6 +320,7 @@
 				3B4B8B2B207214940023506B /* road1.png in Resources */,
 				3B4B8B3C207214940023506B /* road18.png in Resources */,
 				3B4B8B3A207214940023506B /* road16.png in Resources */,
+				3B4B8B42207216CC0023506B /* car0.png in Resources */,
 				3B4B8B3E207214940023506B /* road20.png in Resources */,
 				3B4B8B36207214940023506B /* road12.png in Resources */,
 				3B4B8B31207214940023506B /* road7.png in Resources */,
@@ -345,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B4B8AEB207213880023506B /* ViewController.swift in Sources */,
+				3B4B8B40207216220023506B /* cocoa.swift in Sources */,
 				3B4B8AE9207213880023506B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,6 +20,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaC-Jf-aHB">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car0.png" translatesAutoresizingMaskIntoConstraints="NO" id="87X-mX-jTz" customClass="cocoa" customModule="Coursework" customModuleProvider="target">
+                                <rect key="frame" x="144" y="478" width="33" height="55"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -33,4 +36,7 @@
             <point key="canvasLocation" x="96" y="442"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="car0.png" width="382" height="757"/>
+    </resources>
 </document>

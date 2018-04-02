@@ -36,21 +36,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="game_over.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ARM-Z7-Pbc">
+                                <rect key="frame" x="1" y="156" width="374" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="debug" destination="ZWT-oS-ndk" id="mN1-bC-9sb"/>
+                        <outlet property="game_over" destination="ARM-Z7-Pbc" id="d07-R2-DTj"/>
                         <outlet property="main_car" destination="87X-mX-jTz" id="hkr-hF-aFQ"/>
                         <outlet property="roadView" destination="kaC-Jf-aHB" id="31f-C8-fl5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="558.17091454272872"/>
+            <point key="canvasLocation" x="256.80000000000001" y="550.97451274362822"/>
         </scene>
     </scenes>
     <resources>
         <image name="car0.png" width="382" height="757"/>
+        <image name="game_over.jpg" width="450" height="338"/>
     </resources>
 </document>

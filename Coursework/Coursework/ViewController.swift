@@ -23,6 +23,7 @@ class ViewController: UIViewController, subviewDelegate {
     @IBOutlet weak var main_car: cocoa!
     @IBOutlet weak var debug: UILabel!
     @IBOutlet weak var roadView: UIImageView!
+    @IBOutlet weak var game_over: UIImageView!
     
     func debug(text: String){
         self.debug.text = text
@@ -90,6 +91,7 @@ class ViewController: UIViewController, subviewDelegate {
         let timeOut = DispatchTime.now() + 20
         DispatchQueue.main.asyncAfter(deadline: timeOut) {
             // finish the game
+            self.game_over.isHidden = false
         }
         
     }

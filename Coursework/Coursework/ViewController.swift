@@ -11,15 +11,16 @@ import UIKit
 class ViewController: UIViewController {
     
     var dynamicAnimator: UIDynamicAnimator!
+    var collisionBehavior: UICollisionBehavior!
     var dynamicItemBehavior: UIDynamicItemBehavior!
     
+    @IBOutlet weak var main_car: cocoa!
     
     @IBOutlet weak var roadView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         
         var imageArray: [UIImage]!
         
@@ -54,10 +55,18 @@ class ViewController: UIViewController {
             carView.frame = CGRect(x:midx-15,y:30,width:30,height:45)
             self.view.addSubview(carView)
             // when = DispatchTime.now() + 2
+            
+            
             self.dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
             self.dynamicItemBehavior = UIDynamicItemBehavior(items:[carView])
             self.dynamicItemBehavior.addLinearVelocity(CGPoint(x:0,y:300), for: carView)
             self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
+            
+            self.collisionBehavior = UICollisionBehavior(items:[carView])
+            // self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
+            self.dynamicAnimator.addBehavior(self.collisionBehavior)
+            
+            self.collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
         }
         
         let timeOut = DispatchTime.now() + 20

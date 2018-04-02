@@ -33,6 +33,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="main_car" destination="87X-mX-jTz" id="hkr-hF-aFQ"/>
                         <outlet property="roadView" destination="kaC-Jf-aHB" id="31f-C8-fl5"/>
                     </connections>
                 </viewController>

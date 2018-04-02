@@ -23,9 +23,10 @@
 import UIKit
 
 // A delay function
-func delay(_ seconds: Double, completion: @escaping ()->Void) {
-  DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: completion)
-}
+
+//func delay( seconds: Double, completion: @escaping ()->Void) {
+//  DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: completion)
+//}
 
 class ViewController: UIViewController {
   
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
   
   // MARK: further UI
   
-  let spinner = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+  let spinner = UIActivityIndicatorView()//activityIndicatorStyle: .whiteLarge)
   let status = UIImageView(image: UIImage(named: "banner"))
   let label = UILabel()
   let messages = ["Connecting ...", "Authorizing ...", "Sending credentials ...", "Failed"]
@@ -64,22 +65,22 @@ class ViewController: UIViewController {
     spinner.alpha = 0.0
     loginButton.addSubview(spinner)
     
-    status.isHidden = true
+    //status.isHidden = true
     status.center = loginButton.center
     view.addSubview(status)
     
     label.frame = CGRect(x: 0.0, y: 0.0, width: status.frame.size.width, height: status.frame.size.height)
     label.font = UIFont(name: "HelveticaNeue", size: 18.0)
     label.textColor = UIColor(red: 0.89, green: 0.38, blue: 0.0, alpha: 1.0)
-    label.textAlignment = .center
+    //label.textAlignment = .center
     status.addSubview(label)
   }
   
-  override func viewWillAppear(_ animated: Bool) {
+  override func viewWillAppear( animated: Bool) {
     super.viewWillAppear(animated)
   }
   
-  override func viewDidAppear(_ animated: Bool) {
+  override func viewDidAppear( animated: Bool) {
     super.viewDidAppear(animated)
   }
   
@@ -91,7 +92,7 @@ class ViewController: UIViewController {
   
   // MARK: UITextFieldDelegate
   
-  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+  func textFieldShouldReturn( textField: UITextField) -> Bool {
     let nextField = (textField === username) ? password : username
     nextField?.becomeFirstResponder()
     return true

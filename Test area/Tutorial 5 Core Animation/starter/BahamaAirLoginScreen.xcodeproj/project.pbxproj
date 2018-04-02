@@ -11,7 +11,6 @@
 		9C43196B1A0C32D80085829B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C43196A1A0C32D80085829B /* ViewController.swift */; };
 		9C43196E1A0C32D90085829B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C43196C1A0C32D90085829B /* Main.storyboard */; };
 		9C4319701A0C32D90085829B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C43196F1A0C32D90085829B /* Images.xcassets */; };
-		9C4319731A0C32D90085829B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C4319711A0C32D90085829B /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +20,6 @@
 		9C43196A1A0C32D80085829B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C43196D1A0C32D90085829B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C43196F1A0C32D90085829B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9C4319721A0C32D90085829B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 				9C43196A1A0C32D80085829B /* ViewController.swift */,
 				9C43196C1A0C32D90085829B /* Main.storyboard */,
 				9C43196F1A0C32D90085829B /* Images.xcassets */,
-				9C4319711A0C32D90085829B /* LaunchScreen.xib */,
 				9C4319661A0C32D80085829B /* Supporting Files */,
 			);
 			path = BahamaAirLoginScreen;
@@ -132,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C43196E1A0C32D90085829B /* Main.storyboard in Resources */,
-				9C4319731A0C32D90085829B /* LaunchScreen.xib in Resources */,
 				9C4319701A0C32D90085829B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +154,6 @@
 				9C43196D1A0C32D90085829B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9C4319711A0C32D90085829B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C4319721A0C32D90085829B /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

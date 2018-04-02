@@ -40,16 +40,14 @@ class ViewController: UIViewController {
                       UIImage(named: "road19.png")!,
                       UIImage(named: "road20.png")!]
         
-        roadView.image = UIImage.animatedImageWithImages(imageArray, duration: 1)
-        
-        let carView = UIImageView(image: nil)
-        carView.image = UIImage(named: "car1.png")
-        carView.frame = CGRect(x:100,y:100,width:30,height:50)
-        self.view.addSubview(carView)
+        roadView.image = UIImage.animatedImage(with: imageArray, duration: 1)
         
         let when = DispatchTime.now() + 2
         DispatchQueue.main.asyncAfter(deadline: when) {
-            // Your code for actions when the time is up
+            let carView = UIImageView(image: nil)
+            carView.image = UIImage(named: "car1.png")
+            carView.frame = CGRect(x:150,y:100,width:30,height:50)
+            self.view.addSubview(carView)
         }
     }
 

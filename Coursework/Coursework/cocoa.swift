@@ -20,17 +20,17 @@ class cocoa: UIImageView {
     
     var startLocation: CGPoint?
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        startLocation = touches.first?.locationInView(self)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        startLocation = touches.first?.location(in: self)
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        let currentLocation = touches.first?.locationInView(self)
+        let currentLocation = touches.first?.location(in: self)
         let dx = currentLocation!.x - startLocation!.x
         let dy = currentLocation!.y - startLocation!.y
         
-        self.center = CGPointMake(self.center.x+dx, self.center.y+dy)
+        self.center = CGPoint(x: self.center.x+dx, y: self.center.y+dy)
         
         
         //let halfx = CGRectGetMidX(self.bounds)

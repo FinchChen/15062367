@@ -8,19 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+protocol subviewDelegate {
+    func moveBoundary();
+    func debug(text: String)
+}
+
+class ViewController: UIViewController, subviewDelegate {
+    
     
     var dynamicAnimator: UIDynamicAnimator!
     var collisionBehavior: UICollisionBehavior!
     var dynamicItemBehavior: UIDynamicItemBehavior!
     
     @IBOutlet weak var main_car: cocoa!
-    
+    @IBOutlet weak var debug: UILabel!
     @IBOutlet weak var roadView: UIImageView!
+    
+    func debug(text: String){
+        self.debug.text = text
+    }
+    
+    func moveBoundary(){
+        self.collisionBehavior.removeAllBoundaries()
+        self.collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        main_car.myDelegate = self
         
         var imageArray: [UIImage]!
         
@@ -63,10 +80,11 @@ class ViewController: UIViewController {
             self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
             
             self.collisionBehavior = UICollisionBehavior(items:[carView])
-            // self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
+            self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
             self.dynamicAnimator.addBehavior(self.collisionBehavior)
             
             self.collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
+            
         }
         
         let timeOut = DispatchTime.now() + 20

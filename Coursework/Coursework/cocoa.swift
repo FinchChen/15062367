@@ -20,9 +20,13 @@ class cocoa: UIImageView {
     
     var startLocation: CGPoint?
     
+    var myDelegate: subviewDelegate?
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         startLocation = touches.first?.location(in: self)
     }
+    
+    
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
@@ -32,12 +36,13 @@ class cocoa: UIImageView {
         
         self.center = CGPoint(x: self.center.x+dx, y: self.center.y+dy)
         
-        
-        //let halfx = CGRectGetMidX(self.bounds)
-        //self.center.x = max(halfx, self.center.x)
-        //self.center.x = min((self.superview?.bounds.size.width)! - halfx, self.center.x)
+        //let halfx = (self.superview?.bounds.size.width)! * 0.5
         self.center.x = max(65, self.center.x)
         self.center.x = min((self.superview?.bounds.size.width)! - 65, self.center.x)
+
+        
+        self.myDelegate?.moveBoundary()
+        self.myDelegate?.debug(text: (self.superview?.bounds.size.width.description)!)
  
     }
     

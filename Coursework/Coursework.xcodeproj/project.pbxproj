@@ -14,28 +14,35 @@
 		3B4B8AF3207213880023506B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8AF1207213880023506B /* LaunchScreen.storyboard */; };
 		3B4B8AFE207213880023506B /* CourseworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B8AFD207213880023506B /* CourseworkTests.swift */; };
 		3B4B8B09207213880023506B /* CourseworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B8B08207213880023506B /* CourseworkUITests.swift */; };
-		3B4B8B2B207214940023506B /* road1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B17207214940023506B /* road1.png */; };
-		3B4B8B2C207214940023506B /* road2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B18207214940023506B /* road2.png */; };
-		3B4B8B2D207214940023506B /* road3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B19207214940023506B /* road3.png */; };
-		3B4B8B2E207214940023506B /* road4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1A207214940023506B /* road4.png */; };
-		3B4B8B2F207214940023506B /* road5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1B207214940023506B /* road5.png */; };
-		3B4B8B30207214940023506B /* road6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1C207214940023506B /* road6.png */; };
-		3B4B8B31207214940023506B /* road7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1D207214940023506B /* road7.png */; };
-		3B4B8B32207214940023506B /* road8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1E207214940023506B /* road8.png */; };
-		3B4B8B33207214940023506B /* road9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1F207214940023506B /* road9.png */; };
-		3B4B8B34207214940023506B /* road10.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B20207214940023506B /* road10.png */; };
-		3B4B8B35207214940023506B /* road11.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B21207214940023506B /* road11.png */; };
-		3B4B8B36207214940023506B /* road12.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B22207214940023506B /* road12.png */; };
-		3B4B8B37207214940023506B /* road13.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B23207214940023506B /* road13.png */; };
-		3B4B8B38207214940023506B /* road14.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B24207214940023506B /* road14.png */; };
-		3B4B8B39207214940023506B /* road15.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B25207214940023506B /* road15.png */; };
-		3B4B8B3A207214940023506B /* road16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B26207214940023506B /* road16.png */; };
-		3B4B8B3B207214940023506B /* road17.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B27207214940023506B /* road17.png */; };
-		3B4B8B3C207214940023506B /* road18.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B28207214940023506B /* road18.png */; };
-		3B4B8B3D207214940023506B /* road19.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B29207214940023506B /* road19.png */; };
-		3B4B8B3E207214940023506B /* road20.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B2A207214940023506B /* road20.png */; };
 		3B4B8B40207216220023506B /* cocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B8B3F207216220023506B /* cocoa.swift */; };
-		3B4B8B42207216CC0023506B /* car0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B41207216CC0023506B /* car0.png */; };
+		3B4B8B60207227780023506B /* car0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B44207227780023506B /* car0.png */; };
+		3B4B8B61207227780023506B /* car1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B45207227780023506B /* car1.png */; };
+		3B4B8B62207227780023506B /* car2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B46207227780023506B /* car2.png */; };
+		3B4B8B63207227780023506B /* car3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B47207227780023506B /* car3.png */; };
+		3B4B8B64207227780023506B /* car4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B48207227780023506B /* car4.png */; };
+		3B4B8B65207227780023506B /* car5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B49207227780023506B /* car5.png */; };
+		3B4B8B66207227780023506B /* car6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B4A207227780023506B /* car6.png */; };
+		3B4B8B67207227780023506B /* game_over.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B4B207227780023506B /* game_over.jpg */; };
+		3B4B8B68207227780023506B /* road1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B4C207227780023506B /* road1.png */; };
+		3B4B8B69207227780023506B /* road2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B4D207227780023506B /* road2.png */; };
+		3B4B8B6A207227780023506B /* road3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B4E207227780023506B /* road3.png */; };
+		3B4B8B6B207227780023506B /* road4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B4F207227780023506B /* road4.png */; };
+		3B4B8B6C207227780023506B /* road5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B50207227780023506B /* road5.png */; };
+		3B4B8B6D207227780023506B /* road6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B51207227780023506B /* road6.png */; };
+		3B4B8B6E207227780023506B /* road7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B52207227780023506B /* road7.png */; };
+		3B4B8B6F207227780023506B /* road8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B53207227780023506B /* road8.png */; };
+		3B4B8B70207227780023506B /* road9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B54207227780023506B /* road9.png */; };
+		3B4B8B71207227780023506B /* road10.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B55207227780023506B /* road10.png */; };
+		3B4B8B72207227780023506B /* road11.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B56207227780023506B /* road11.png */; };
+		3B4B8B73207227780023506B /* road12.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B57207227780023506B /* road12.png */; };
+		3B4B8B74207227780023506B /* road13.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B58207227780023506B /* road13.png */; };
+		3B4B8B75207227780023506B /* road14.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B59207227780023506B /* road14.png */; };
+		3B4B8B76207227780023506B /* road15.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B5A207227780023506B /* road15.png */; };
+		3B4B8B77207227780023506B /* road16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B5B207227780023506B /* road16.png */; };
+		3B4B8B78207227780023506B /* road17.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B5C207227780023506B /* road17.png */; };
+		3B4B8B79207227780023506B /* road18.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B5D207227780023506B /* road18.png */; };
+		3B4B8B7A207227780023506B /* road19.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B5E207227780023506B /* road19.png */; };
+		3B4B8B7B207227780023506B /* road20.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B5F207227780023506B /* road20.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,28 +76,35 @@
 		3B4B8B04207213880023506B /* CourseworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4B8B08207213880023506B /* CourseworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseworkUITests.swift; sourceTree = "<group>"; };
 		3B4B8B0A207213880023506B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B4B8B17207214940023506B /* road1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road1.png; path = "../../Test area/images/images/road1.png"; sourceTree = "<group>"; };
-		3B4B8B18207214940023506B /* road2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road2.png; path = "../../Test area/images/images/road2.png"; sourceTree = "<group>"; };
-		3B4B8B19207214940023506B /* road3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road3.png; path = "../../Test area/images/images/road3.png"; sourceTree = "<group>"; };
-		3B4B8B1A207214940023506B /* road4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road4.png; path = "../../Test area/images/images/road4.png"; sourceTree = "<group>"; };
-		3B4B8B1B207214940023506B /* road5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road5.png; path = "../../Test area/images/images/road5.png"; sourceTree = "<group>"; };
-		3B4B8B1C207214940023506B /* road6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road6.png; path = "../../Test area/images/images/road6.png"; sourceTree = "<group>"; };
-		3B4B8B1D207214940023506B /* road7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road7.png; path = "../../Test area/images/images/road7.png"; sourceTree = "<group>"; };
-		3B4B8B1E207214940023506B /* road8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road8.png; path = "../../Test area/images/images/road8.png"; sourceTree = "<group>"; };
-		3B4B8B1F207214940023506B /* road9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road9.png; path = "../../Test area/images/images/road9.png"; sourceTree = "<group>"; };
-		3B4B8B20207214940023506B /* road10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road10.png; path = "../../Test area/images/images/road10.png"; sourceTree = "<group>"; };
-		3B4B8B21207214940023506B /* road11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road11.png; path = "../../Test area/images/images/road11.png"; sourceTree = "<group>"; };
-		3B4B8B22207214940023506B /* road12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road12.png; path = "../../Test area/images/images/road12.png"; sourceTree = "<group>"; };
-		3B4B8B23207214940023506B /* road13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road13.png; path = "../../Test area/images/images/road13.png"; sourceTree = "<group>"; };
-		3B4B8B24207214940023506B /* road14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road14.png; path = "../../Test area/images/images/road14.png"; sourceTree = "<group>"; };
-		3B4B8B25207214940023506B /* road15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road15.png; path = "../../Test area/images/images/road15.png"; sourceTree = "<group>"; };
-		3B4B8B26207214940023506B /* road16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road16.png; path = "../../Test area/images/images/road16.png"; sourceTree = "<group>"; };
-		3B4B8B27207214940023506B /* road17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road17.png; path = "../../Test area/images/images/road17.png"; sourceTree = "<group>"; };
-		3B4B8B28207214940023506B /* road18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road18.png; path = "../../Test area/images/images/road18.png"; sourceTree = "<group>"; };
-		3B4B8B29207214940023506B /* road19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road19.png; path = "../../Test area/images/images/road19.png"; sourceTree = "<group>"; };
-		3B4B8B2A207214940023506B /* road20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road20.png; path = "../../Test area/images/images/road20.png"; sourceTree = "<group>"; };
 		3B4B8B3F207216220023506B /* cocoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cocoa.swift; sourceTree = "<group>"; };
-		3B4B8B41207216CC0023506B /* car0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car0.png; path = "../../Test area/images/images/car0.png"; sourceTree = "<group>"; };
+		3B4B8B44207227780023506B /* car0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car0.png; path = Images/car0.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B45207227780023506B /* car1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car1.png; path = Images/car1.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B46207227780023506B /* car2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car2.png; path = Images/car2.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B47207227780023506B /* car3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car3.png; path = Images/car3.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B48207227780023506B /* car4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car4.png; path = Images/car4.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B49207227780023506B /* car5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car5.png; path = Images/car5.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B4A207227780023506B /* car6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car6.png; path = Images/car6.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B4B207227780023506B /* game_over.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = game_over.jpg; path = Images/game_over.jpg; sourceTree = SOURCE_ROOT; };
+		3B4B8B4C207227780023506B /* road1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road1.png; path = Images/road1.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B4D207227780023506B /* road2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road2.png; path = Images/road2.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B4E207227780023506B /* road3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road3.png; path = Images/road3.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B4F207227780023506B /* road4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road4.png; path = Images/road4.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B50207227780023506B /* road5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road5.png; path = Images/road5.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B51207227780023506B /* road6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road6.png; path = Images/road6.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B52207227780023506B /* road7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road7.png; path = Images/road7.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B53207227780023506B /* road8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road8.png; path = Images/road8.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B54207227780023506B /* road9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road9.png; path = Images/road9.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B55207227780023506B /* road10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road10.png; path = Images/road10.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B56207227780023506B /* road11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road11.png; path = Images/road11.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B57207227780023506B /* road12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road12.png; path = Images/road12.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B58207227780023506B /* road13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road13.png; path = Images/road13.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B59207227780023506B /* road14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road14.png; path = Images/road14.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B5A207227780023506B /* road15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road15.png; path = Images/road15.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B5B207227780023506B /* road16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road16.png; path = Images/road16.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B5C207227780023506B /* road17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road17.png; path = Images/road17.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B5D207227780023506B /* road18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road18.png; path = Images/road18.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B5E207227780023506B /* road19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road19.png; path = Images/road19.png; sourceTree = SOURCE_ROOT; };
+		3B4B8B5F207227780023506B /* road20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road20.png; path = Images/road20.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +155,7 @@
 		3B4B8AE7207213880023506B /* Coursework */ = {
 			isa = PBXGroup;
 			children = (
-				3B4B8B16207214770023506B /* Pictures */,
+				3B4B8B43207227640023506B /* Images */,
 				3B4B8AE8207213880023506B /* AppDelegate.swift */,
 				3B4B8AEA207213880023506B /* ViewController.swift */,
 				3B4B8AEC207213880023506B /* Main.storyboard */,
@@ -171,32 +185,39 @@
 			path = CourseworkUITests;
 			sourceTree = "<group>";
 		};
-		3B4B8B16207214770023506B /* Pictures */ = {
+		3B4B8B43207227640023506B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				3B4B8B41207216CC0023506B /* car0.png */,
-				3B4B8B17207214940023506B /* road1.png */,
-				3B4B8B18207214940023506B /* road2.png */,
-				3B4B8B19207214940023506B /* road3.png */,
-				3B4B8B1A207214940023506B /* road4.png */,
-				3B4B8B1B207214940023506B /* road5.png */,
-				3B4B8B1C207214940023506B /* road6.png */,
-				3B4B8B1D207214940023506B /* road7.png */,
-				3B4B8B1E207214940023506B /* road8.png */,
-				3B4B8B1F207214940023506B /* road9.png */,
-				3B4B8B20207214940023506B /* road10.png */,
-				3B4B8B21207214940023506B /* road11.png */,
-				3B4B8B22207214940023506B /* road12.png */,
-				3B4B8B23207214940023506B /* road13.png */,
-				3B4B8B24207214940023506B /* road14.png */,
-				3B4B8B25207214940023506B /* road15.png */,
-				3B4B8B26207214940023506B /* road16.png */,
-				3B4B8B27207214940023506B /* road17.png */,
-				3B4B8B28207214940023506B /* road18.png */,
-				3B4B8B29207214940023506B /* road19.png */,
-				3B4B8B2A207214940023506B /* road20.png */,
+				3B4B8B44207227780023506B /* car0.png */,
+				3B4B8B45207227780023506B /* car1.png */,
+				3B4B8B46207227780023506B /* car2.png */,
+				3B4B8B47207227780023506B /* car3.png */,
+				3B4B8B48207227780023506B /* car4.png */,
+				3B4B8B49207227780023506B /* car5.png */,
+				3B4B8B4A207227780023506B /* car6.png */,
+				3B4B8B4B207227780023506B /* game_over.jpg */,
+				3B4B8B4C207227780023506B /* road1.png */,
+				3B4B8B4D207227780023506B /* road2.png */,
+				3B4B8B4E207227780023506B /* road3.png */,
+				3B4B8B4F207227780023506B /* road4.png */,
+				3B4B8B50207227780023506B /* road5.png */,
+				3B4B8B51207227780023506B /* road6.png */,
+				3B4B8B52207227780023506B /* road7.png */,
+				3B4B8B53207227780023506B /* road8.png */,
+				3B4B8B54207227780023506B /* road9.png */,
+				3B4B8B55207227780023506B /* road10.png */,
+				3B4B8B56207227780023506B /* road11.png */,
+				3B4B8B57207227780023506B /* road12.png */,
+				3B4B8B58207227780023506B /* road13.png */,
+				3B4B8B59207227780023506B /* road14.png */,
+				3B4B8B5A207227780023506B /* road15.png */,
+				3B4B8B5B207227780023506B /* road16.png */,
+				3B4B8B5C207227780023506B /* road17.png */,
+				3B4B8B5D207227780023506B /* road18.png */,
+				3B4B8B5E207227780023506B /* road19.png */,
+				3B4B8B5F207227780023506B /* road20.png */,
 			);
-			name = Pictures;
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,29 +325,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B4B8AF3207213880023506B /* LaunchScreen.storyboard in Resources */,
+				3B4B8B7A207227780023506B /* road19.png in Resources */,
+				3B4B8B71207227780023506B /* road10.png in Resources */,
+				3B4B8B66207227780023506B /* car6.png in Resources */,
+				3B4B8B6D207227780023506B /* road6.png in Resources */,
+				3B4B8B70207227780023506B /* road9.png in Resources */,
+				3B4B8B6E207227780023506B /* road7.png in Resources */,
+				3B4B8B61207227780023506B /* car1.png in Resources */,
+				3B4B8B74207227780023506B /* road13.png in Resources */,
+				3B4B8B79207227780023506B /* road18.png in Resources */,
+				3B4B8B6B207227780023506B /* road4.png in Resources */,
+				3B4B8B73207227780023506B /* road12.png in Resources */,
+				3B4B8B68207227780023506B /* road1.png in Resources */,
+				3B4B8B75207227780023506B /* road14.png in Resources */,
+				3B4B8B72207227780023506B /* road11.png in Resources */,
+				3B4B8B65207227780023506B /* car5.png in Resources */,
+				3B4B8B60207227780023506B /* car0.png in Resources */,
+				3B4B8B78207227780023506B /* road17.png in Resources */,
+				3B4B8B76207227780023506B /* road15.png in Resources */,
+				3B4B8B6F207227780023506B /* road8.png in Resources */,
+				3B4B8B6C207227780023506B /* road5.png in Resources */,
 				3B4B8AF0207213880023506B /* Assets.xcassets in Resources */,
-				3B4B8B2C207214940023506B /* road2.png in Resources */,
-				3B4B8B33207214940023506B /* road9.png in Resources */,
-				3B4B8B38207214940023506B /* road14.png in Resources */,
-				3B4B8B30207214940023506B /* road6.png in Resources */,
-				3B4B8B2D207214940023506B /* road3.png in Resources */,
-				3B4B8B34207214940023506B /* road10.png in Resources */,
-				3B4B8B37207214940023506B /* road13.png in Resources */,
-				3B4B8B35207214940023506B /* road11.png in Resources */,
+				3B4B8B69207227780023506B /* road2.png in Resources */,
 				3B4B8AEE207213880023506B /* Main.storyboard in Resources */,
-				3B4B8B3B207214940023506B /* road17.png in Resources */,
-				3B4B8B32207214940023506B /* road8.png in Resources */,
-				3B4B8B3D207214940023506B /* road19.png in Resources */,
-				3B4B8B2B207214940023506B /* road1.png in Resources */,
-				3B4B8B3C207214940023506B /* road18.png in Resources */,
-				3B4B8B3A207214940023506B /* road16.png in Resources */,
-				3B4B8B42207216CC0023506B /* car0.png in Resources */,
-				3B4B8B3E207214940023506B /* road20.png in Resources */,
-				3B4B8B36207214940023506B /* road12.png in Resources */,
-				3B4B8B31207214940023506B /* road7.png in Resources */,
-				3B4B8B2E207214940023506B /* road4.png in Resources */,
-				3B4B8B2F207214940023506B /* road5.png in Resources */,
-				3B4B8B39207214940023506B /* road15.png in Resources */,
+				3B4B8B6A207227780023506B /* road3.png in Resources */,
+				3B4B8B77207227780023506B /* road16.png in Resources */,
+				3B4B8B64207227780023506B /* car4.png in Resources */,
+				3B4B8B62207227780023506B /* car2.png in Resources */,
+				3B4B8B7B207227780023506B /* road20.png in Resources */,
+				3B4B8B67207227780023506B /* game_over.jpg in Resources */,
+				3B4B8B63207227780023506B /* car3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

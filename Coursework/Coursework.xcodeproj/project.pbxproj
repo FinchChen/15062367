@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B4B8AE9207213880023506B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B8AE8207213880023506B /* AppDelegate.swift */; };
+		3B4B8AEB207213880023506B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B8AEA207213880023506B /* ViewController.swift */; };
+		3B4B8AEE207213880023506B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8AEC207213880023506B /* Main.storyboard */; };
+		3B4B8AF0207213880023506B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8AEF207213880023506B /* Assets.xcassets */; };
+		3B4B8AF3207213880023506B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8AF1207213880023506B /* LaunchScreen.storyboard */; };
+		3B4B8AFE207213880023506B /* CourseworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B8AFD207213880023506B /* CourseworkTests.swift */; };
+		3B4B8B09207213880023506B /* CourseworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B8B08207213880023506B /* CourseworkUITests.swift */; };
+		3B4B8B2B207214940023506B /* road1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B17207214940023506B /* road1.png */; };
+		3B4B8B2C207214940023506B /* road2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B18207214940023506B /* road2.png */; };
+		3B4B8B2D207214940023506B /* road3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B19207214940023506B /* road3.png */; };
+		3B4B8B2E207214940023506B /* road4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1A207214940023506B /* road4.png */; };
+		3B4B8B2F207214940023506B /* road5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1B207214940023506B /* road5.png */; };
+		3B4B8B30207214940023506B /* road6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1C207214940023506B /* road6.png */; };
+		3B4B8B31207214940023506B /* road7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1D207214940023506B /* road7.png */; };
+		3B4B8B32207214940023506B /* road8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1E207214940023506B /* road8.png */; };
+		3B4B8B33207214940023506B /* road9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B1F207214940023506B /* road9.png */; };
+		3B4B8B34207214940023506B /* road10.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B20207214940023506B /* road10.png */; };
+		3B4B8B35207214940023506B /* road11.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B21207214940023506B /* road11.png */; };
+		3B4B8B36207214940023506B /* road12.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B22207214940023506B /* road12.png */; };
+		3B4B8B37207214940023506B /* road13.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B23207214940023506B /* road13.png */; };
+		3B4B8B38207214940023506B /* road14.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B24207214940023506B /* road14.png */; };
+		3B4B8B39207214940023506B /* road15.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B25207214940023506B /* road15.png */; };
+		3B4B8B3A207214940023506B /* road16.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B26207214940023506B /* road16.png */; };
+		3B4B8B3B207214940023506B /* road17.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B27207214940023506B /* road17.png */; };
+		3B4B8B3C207214940023506B /* road18.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B28207214940023506B /* road18.png */; };
+		3B4B8B3D207214940023506B /* road19.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B29207214940023506B /* road19.png */; };
+		3B4B8B3E207214940023506B /* road20.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B2A207214940023506B /* road20.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B4B8AFA207213880023506B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B4B8ADD207213880023506B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B4B8AE4207213880023506B;
+			remoteInfo = Coursework;
+		};
+		3B4B8B05207213880023506B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B4B8ADD207213880023506B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B4B8AE4207213880023506B;
+			remoteInfo = Coursework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B4B8AE5207213880023506B /* Coursework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coursework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4B8AE8207213880023506B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B4B8AEA207213880023506B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B4B8AED207213880023506B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B4B8AEF207213880023506B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B4B8AF2207213880023506B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B4B8AF4207213880023506B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4B8AF9207213880023506B /* CourseworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4B8AFD207213880023506B /* CourseworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseworkTests.swift; sourceTree = "<group>"; };
+		3B4B8AFF207213880023506B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4B8B04207213880023506B /* CourseworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4B8B08207213880023506B /* CourseworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseworkUITests.swift; sourceTree = "<group>"; };
+		3B4B8B0A207213880023506B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4B8B17207214940023506B /* road1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road1.png; path = "../../Test area/images/images/road1.png"; sourceTree = "<group>"; };
+		3B4B8B18207214940023506B /* road2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road2.png; path = "../../Test area/images/images/road2.png"; sourceTree = "<group>"; };
+		3B4B8B19207214940023506B /* road3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road3.png; path = "../../Test area/images/images/road3.png"; sourceTree = "<group>"; };
+		3B4B8B1A207214940023506B /* road4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road4.png; path = "../../Test area/images/images/road4.png"; sourceTree = "<group>"; };
+		3B4B8B1B207214940023506B /* road5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road5.png; path = "../../Test area/images/images/road5.png"; sourceTree = "<group>"; };
+		3B4B8B1C207214940023506B /* road6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road6.png; path = "../../Test area/images/images/road6.png"; sourceTree = "<group>"; };
+		3B4B8B1D207214940023506B /* road7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road7.png; path = "../../Test area/images/images/road7.png"; sourceTree = "<group>"; };
+		3B4B8B1E207214940023506B /* road8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road8.png; path = "../../Test area/images/images/road8.png"; sourceTree = "<group>"; };
+		3B4B8B1F207214940023506B /* road9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road9.png; path = "../../Test area/images/images/road9.png"; sourceTree = "<group>"; };
+		3B4B8B20207214940023506B /* road10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road10.png; path = "../../Test area/images/images/road10.png"; sourceTree = "<group>"; };
+		3B4B8B21207214940023506B /* road11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road11.png; path = "../../Test area/images/images/road11.png"; sourceTree = "<group>"; };
+		3B4B8B22207214940023506B /* road12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road12.png; path = "../../Test area/images/images/road12.png"; sourceTree = "<group>"; };
+		3B4B8B23207214940023506B /* road13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road13.png; path = "../../Test area/images/images/road13.png"; sourceTree = "<group>"; };
+		3B4B8B24207214940023506B /* road14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road14.png; path = "../../Test area/images/images/road14.png"; sourceTree = "<group>"; };
+		3B4B8B25207214940023506B /* road15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road15.png; path = "../../Test area/images/images/road15.png"; sourceTree = "<group>"; };
+		3B4B8B26207214940023506B /* road16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road16.png; path = "../../Test area/images/images/road16.png"; sourceTree = "<group>"; };
+		3B4B8B27207214940023506B /* road17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road17.png; path = "../../Test area/images/images/road17.png"; sourceTree = "<group>"; };
+		3B4B8B28207214940023506B /* road18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road18.png; path = "../../Test area/images/images/road18.png"; sourceTree = "<group>"; };
+		3B4B8B29207214940023506B /* road19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road19.png; path = "../../Test area/images/images/road19.png"; sourceTree = "<group>"; };
+		3B4B8B2A207214940023506B /* road20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road20.png; path = "../../Test area/images/images/road20.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B4B8AE2207213880023506B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4B8AF6207213880023506B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4B8B01207213880023506B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B4B8ADC207213880023506B = {
+			isa = PBXGroup;
+			children = (
+				3B4B8AE7207213880023506B /* Coursework */,
+				3B4B8AFC207213880023506B /* CourseworkTests */,
+				3B4B8B07207213880023506B /* CourseworkUITests */,
+				3B4B8AE6207213880023506B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B4B8AE6207213880023506B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B4B8AE5207213880023506B /* Coursework.app */,
+				3B4B8AF9207213880023506B /* CourseworkTests.xctest */,
+				3B4B8B04207213880023506B /* CourseworkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B4B8AE7207213880023506B /* Coursework */ = {
+			isa = PBXGroup;
+			children = (
+				3B4B8B16207214770023506B /* Pictures */,
+				3B4B8AE8207213880023506B /* AppDelegate.swift */,
+				3B4B8AEA207213880023506B /* ViewController.swift */,
+				3B4B8AEC207213880023506B /* Main.storyboard */,
+				3B4B8AEF207213880023506B /* Assets.xcassets */,
+				3B4B8AF1207213880023506B /* LaunchScreen.storyboard */,
+				3B4B8AF4207213880023506B /* Info.plist */,
+			);
+			path = Coursework;
+			sourceTree = "<group>";
+		};
+		3B4B8AFC207213880023506B /* CourseworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B4B8AFD207213880023506B /* CourseworkTests.swift */,
+				3B4B8AFF207213880023506B /* Info.plist */,
+			);
+			path = CourseworkTests;
+			sourceTree = "<group>";
+		};
+		3B4B8B07207213880023506B /* CourseworkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B4B8B08207213880023506B /* CourseworkUITests.swift */,
+				3B4B8B0A207213880023506B /* Info.plist */,
+			);
+			path = CourseworkUITests;
+			sourceTree = "<group>";
+		};
+		3B4B8B16207214770023506B /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				3B4B8B17207214940023506B /* road1.png */,
+				3B4B8B18207214940023506B /* road2.png */,
+				3B4B8B19207214940023506B /* road3.png */,
+				3B4B8B1A207214940023506B /* road4.png */,
+				3B4B8B1B207214940023506B /* road5.png */,
+				3B4B8B1C207214940023506B /* road6.png */,
+				3B4B8B1D207214940023506B /* road7.png */,
+				3B4B8B1E207214940023506B /* road8.png */,
+				3B4B8B1F207214940023506B /* road9.png */,
+				3B4B8B20207214940023506B /* road10.png */,
+				3B4B8B21207214940023506B /* road11.png */,
+				3B4B8B22207214940023506B /* road12.png */,
+				3B4B8B23207214940023506B /* road13.png */,
+				3B4B8B24207214940023506B /* road14.png */,
+				3B4B8B25207214940023506B /* road15.png */,
+				3B4B8B26207214940023506B /* road16.png */,
+				3B4B8B27207214940023506B /* road17.png */,
+				3B4B8B28207214940023506B /* road18.png */,
+				3B4B8B29207214940023506B /* road19.png */,
+				3B4B8B2A207214940023506B /* road20.png */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B4B8AE4207213880023506B /* Coursework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4B8B0D207213880023506B /* Build configuration list for PBXNativeTarget "Coursework" */;
+			buildPhases = (
+				3B4B8AE1207213880023506B /* Sources */,
+				3B4B8AE2207213880023506B /* Frameworks */,
+				3B4B8AE3207213880023506B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coursework;
+			productName = Coursework;
+			productReference = 3B4B8AE5207213880023506B /* Coursework.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B4B8AF8207213880023506B /* CourseworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4B8B10207213880023506B /* Build configuration list for PBXNativeTarget "CourseworkTests" */;
+			buildPhases = (
+				3B4B8AF5207213880023506B /* Sources */,
+				3B4B8AF6207213880023506B /* Frameworks */,
+				3B4B8AF7207213880023506B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B4B8AFB207213880023506B /* PBXTargetDependency */,
+			);
+			name = CourseworkTests;
+			productName = CourseworkTests;
+			productReference = 3B4B8AF9207213880023506B /* CourseworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B4B8B03207213880023506B /* CourseworkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4B8B13207213880023506B /* Build configuration list for PBXNativeTarget "CourseworkUITests" */;
+			buildPhases = (
+				3B4B8B00207213880023506B /* Sources */,
+				3B4B8B01207213880023506B /* Frameworks */,
+				3B4B8B02207213880023506B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B4B8B06207213880023506B /* PBXTargetDependency */,
+			);
+			name = CourseworkUITests;
+			productName = CourseworkUITests;
+			productReference = 3B4B8B04207213880023506B /* CourseworkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B4B8ADD207213880023506B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = 15062367;
+				TargetAttributes = {
+					3B4B8AE4207213880023506B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3B4B8AF8207213880023506B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3B4B8AE4207213880023506B;
+					};
+					3B4B8B03207213880023506B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3B4B8AE4207213880023506B;
+					};
+				};
+			};
+			buildConfigurationList = 3B4B8AE0207213880023506B /* Build configuration list for PBXProject "Coursework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B4B8ADC207213880023506B;
+			productRefGroup = 3B4B8AE6207213880023506B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B4B8AE4207213880023506B /* Coursework */,
+				3B4B8AF8207213880023506B /* CourseworkTests */,
+				3B4B8B03207213880023506B /* CourseworkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B4B8AE3207213880023506B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4B8AF3207213880023506B /* LaunchScreen.storyboard in Resources */,
+				3B4B8AF0207213880023506B /* Assets.xcassets in Resources */,
+				3B4B8B2C207214940023506B /* road2.png in Resources */,
+				3B4B8B33207214940023506B /* road9.png in Resources */,
+				3B4B8B38207214940023506B /* road14.png in Resources */,
+				3B4B8B30207214940023506B /* road6.png in Resources */,
+				3B4B8B2D207214940023506B /* road3.png in Resources */,
+				3B4B8B34207214940023506B /* road10.png in Resources */,
+				3B4B8B37207214940023506B /* road13.png in Resources */,
+				3B4B8B35207214940023506B /* road11.png in Resources */,
+				3B4B8AEE207213880023506B /* Main.storyboard in Resources */,
+				3B4B8B3B207214940023506B /* road17.png in Resources */,
+				3B4B8B32207214940023506B /* road8.png in Resources */,
+				3B4B8B3D207214940023506B /* road19.png in Resources */,
+				3B4B8B2B207214940023506B /* road1.png in Resources */,
+				3B4B8B3C207214940023506B /* road18.png in Resources */,
+				3B4B8B3A207214940023506B /* road16.png in Resources */,
+				3B4B8B3E207214940023506B /* road20.png in Resources */,
+				3B4B8B36207214940023506B /* road12.png in Resources */,
+				3B4B8B31207214940023506B /* road7.png in Resources */,
+				3B4B8B2E207214940023506B /* road4.png in Resources */,
+				3B4B8B2F207214940023506B /* road5.png in Resources */,
+				3B4B8B39207214940023506B /* road15.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4B8AF7207213880023506B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4B8B02207213880023506B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B4B8AE1207213880023506B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4B8AEB207213880023506B /* ViewController.swift in Sources */,
+				3B4B8AE9207213880023506B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4B8AF5207213880023506B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4B8AFE207213880023506B /* CourseworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4B8B00207213880023506B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4B8B09207213880023506B /* CourseworkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B4B8AFB207213880023506B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B4B8AE4207213880023506B /* Coursework */;
+			targetProxy = 3B4B8AFA207213880023506B /* PBXContainerItemProxy */;
+		};
+		3B4B8B06207213880023506B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B4B8AE4207213880023506B /* Coursework */;
+			targetProxy = 3B4B8B05207213880023506B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B4B8AEC207213880023506B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B4B8AED207213880023506B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B4B8AF1207213880023506B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B4B8AF2207213880023506B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B4B8B0B207213880023506B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B4B8B0C207213880023506B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B4B8B0E207213880023506B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Coursework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-15062367.Coursework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B4B8B0F207213880023506B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Coursework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-15062367.Coursework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3B4B8B11207213880023506B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CourseworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-5062367.CourseworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coursework.app/Coursework";
+			};
+			name = Debug;
+		};
+		3B4B8B12207213880023506B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CourseworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-5062367.CourseworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coursework.app/Coursework";
+			};
+			name = Release;
+		};
+		3B4B8B14207213880023506B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CourseworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-5062367.CourseworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Coursework;
+			};
+			name = Debug;
+		};
+		3B4B8B15207213880023506B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CourseworkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-5062367.CourseworkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Coursework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B4B8AE0207213880023506B /* Build configuration list for PBXProject "Coursework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4B8B0B207213880023506B /* Debug */,
+				3B4B8B0C207213880023506B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4B8B0D207213880023506B /* Build configuration list for PBXNativeTarget "Coursework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4B8B0E207213880023506B /* Debug */,
+				3B4B8B0F207213880023506B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4B8B10207213880023506B /* Build configuration list for PBXNativeTarget "CourseworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4B8B11207213880023506B /* Debug */,
+				3B4B8B12207213880023506B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4B8B13207213880023506B /* Build configuration list for PBXNativeTarget "CourseworkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4B8B14207213880023506B /* Debug */,
+				3B4B8B15207213880023506B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B4B8ADD207213880023506B /* Project object */;
+}

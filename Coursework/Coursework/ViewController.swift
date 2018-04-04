@@ -25,6 +25,12 @@ class ViewController: UIViewController, subviewDelegate {
     @IBOutlet weak var roadView: UIImageView!
     @IBOutlet weak var game_over: UIImageView!
     
+    @IBAction func replay(_ sender: UIButton) {
+        self.game_over.isHidden = true
+    }
+    
+    @IBOutlet weak var replay2: UIButton!
+    
     func debug(text: String){
         self.debug.text = text
     }
@@ -92,6 +98,7 @@ class ViewController: UIViewController, subviewDelegate {
         DispatchQueue.main.asyncAfter(deadline: timeOut) {
             // finish the game
             self.game_over.isHidden = false
+            self.replay2.isHidden = false
         }
         
     }

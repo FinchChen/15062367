@@ -37,9 +37,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView hidden="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="game_over.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ARM-Z7-Pbc">
-                                <rect key="frame" x="1" y="156" width="374" height="200"/>
+                                <rect key="frame" x="1" y="20" width="374" height="647"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELn-J6-zJa">
+                                <rect key="frame" x="121" y="269" width="156" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="replay.png"/>
+                                <connections>
+                                    <action selector="replay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KGe-DK-VLx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -47,6 +55,7 @@
                         <outlet property="debug" destination="ZWT-oS-ndk" id="mN1-bC-9sb"/>
                         <outlet property="game_over" destination="ARM-Z7-Pbc" id="d07-R2-DTj"/>
                         <outlet property="main_car" destination="87X-mX-jTz" id="hkr-hF-aFQ"/>
+                        <outlet property="replay2" destination="ELn-J6-zJa" id="WXM-Xk-HhK"/>
                         <outlet property="roadView" destination="kaC-Jf-aHB" id="31f-C8-fl5"/>
                     </connections>
                 </viewController>
@@ -58,5 +67,6 @@
     <resources>
         <image name="car0.png" width="382" height="757"/>
         <image name="game_over.jpg" width="450" height="338"/>
+        <image name="replay.png" width="894" height="894"/>
     </resources>
 </document>

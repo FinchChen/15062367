@@ -43,6 +43,7 @@
 		3B4B8B79207227780023506B /* road18.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B5D207227780023506B /* road18.png */; };
 		3B4B8B7A207227780023506B /* road19.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B5E207227780023506B /* road19.png */; };
 		3B4B8B7B207227780023506B /* road20.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B8B5F207227780023506B /* road20.png */; };
+		6294484B2074B0DE00E0C6EF /* replay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6294484A2074B0DD00E0C6EF /* replay.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		3B4B8B5D207227780023506B /* road18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road18.png; path = Images/road18.png; sourceTree = SOURCE_ROOT; };
 		3B4B8B5E207227780023506B /* road19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road19.png; path = Images/road19.png; sourceTree = SOURCE_ROOT; };
 		3B4B8B5F207227780023506B /* road20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = road20.png; path = Images/road20.png; sourceTree = SOURCE_ROOT; };
+		6294484A2074B0DD00E0C6EF /* replay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = replay.png; path = Images/replay.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		3B4B8B43207227640023506B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6294484A2074B0DD00E0C6EF /* replay.png */,
 				3B4B8B44207227780023506B /* car0.png */,
 				3B4B8B45207227780023506B /* car1.png */,
 				3B4B8B46207227780023506B /* car2.png */,
@@ -337,6 +340,7 @@
 				3B4B8B61207227780023506B /* car1.png in Resources */,
 				3B4B8B74207227780023506B /* road13.png in Resources */,
 				3B4B8B79207227780023506B /* road18.png in Resources */,
+				6294484B2074B0DE00E0C6EF /* replay.png in Resources */,
 				3B4B8B6B207227780023506B /* road4.png in Resources */,
 				3B4B8B73207227780023506B /* road12.png in Resources */,
 				3B4B8B68207227780023506B /* road1.png in Resources */,

@@ -42,7 +42,7 @@ class cocoa: UIImageView {
 
         
         self.myDelegate?.moveBoundary()
-        self.myDelegate?.debug(text: (self.superview?.bounds.size.width.description)!)
+        //self.myDelegate?.debug(text: (self.superview?.bounds.size.width.description)!)
  
     }
     

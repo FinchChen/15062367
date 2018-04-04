@@ -27,6 +27,8 @@ class ViewController: UIViewController, subviewDelegate {
     
     @IBAction func replay(_ sender: UIButton) {
         self.game_over.isHidden = true
+        self.replay2.isHidden = true
+        self.viewDidLoad()
     }
     
     @IBOutlet weak var replay2: UIButton!
@@ -87,18 +89,19 @@ class ViewController: UIViewController, subviewDelegate {
             self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
             
             self.collisionBehavior = UICollisionBehavior(items:[carView])
-            self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
+            //self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
             self.dynamicAnimator.addBehavior(self.collisionBehavior)
             
             self.collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
             
         }
         
-        let timeOut = DispatchTime.now() + 20
+        let timeOut = DispatchTime.now() + 10
         DispatchQueue.main.asyncAfter(deadline: timeOut) {
             // finish the game
             self.game_over.isHidden = false
             self.replay2.isHidden = false
+            // self.carView.isHidden = true
         }
         
     }

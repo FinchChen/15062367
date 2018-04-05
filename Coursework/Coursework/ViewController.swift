@@ -13,12 +13,15 @@ protocol subviewDelegate {
     func debug(text: String)
 }
 
+
+
 class ViewController: UIViewController, subviewDelegate {
     
     
     var dynamicAnimator: UIDynamicAnimator!
     var collisionBehavior: UICollisionBehavior!
     var dynamicItemBehavior: UIDynamicItemBehavior!
+    
     
     @IBOutlet weak var main_car: cocoa!
     @IBOutlet weak var debug: UILabel!
@@ -29,6 +32,7 @@ class ViewController: UIViewController, subviewDelegate {
         self.game_over.isHidden = true
         self.replay2.isHidden = true
         self.viewDidLoad()
+        
     }
     
     @IBOutlet weak var replay2: UIButton!
@@ -37,9 +41,14 @@ class ViewController: UIViewController, subviewDelegate {
         self.debug.text = text
     }
     
+    func random(_ range:Range<Int>) -> Int{
+        return range.lowerBound + Int(arc4random_uniform(UInt32(range.upperBound - range.lowerBound)))
+    }
+    
     func moveBoundary(){
         self.collisionBehavior.removeAllBoundaries()
         self.collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
+        
     }
 
     override func viewDidLoad() {
@@ -73,38 +82,53 @@ class ViewController: UIViewController, subviewDelegate {
         
         roadView.image = UIImage.animatedImage(with: imageArray, duration: 1)
         
-        let when = DispatchTime.now() + 2
-        DispatchQueue.main.asyncAfter(deadline: when) {
-            let carView = UIImageView(image: nil)
-            carView.image = UIImage(named: "car1.png")
-            let midx = UIScreen.main.bounds.size.width * 0.5
-            carView.frame = CGRect(x:midx-15,y:30,width:30,height:45)
-            self.view.addSubview(carView)
-            // when = DispatchTime.now() + 2
-            
-            
-            self.dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
-            self.dynamicItemBehavior = UIDynamicItemBehavior(items:[carView])
-            self.dynamicItemBehavior.addLinearVelocity(CGPoint(x:0,y:300), for: carView)
-            self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
-            
-            self.collisionBehavior = UICollisionBehavior(items:[carView])
-            //self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
-            self.dynamicAnimator.addBehavior(self.collisionBehavior)
-            
-            self.collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
-            
-        }
+        var carArray = [UIImage(named: "car1.png")!,
+                        UIImage(named: "car2.png")!,
+                        UIImage(named: "car3.png")!,
+                        UIImage(named: "car4.png")!,
+                        UIImage(named: "car5.png")!,
+                        UIImage(named: "car6.png")!]
+        let carrange: UInt32 = UInt32(carArray.count)
+        let randomcar = Int(arc4random_uniform(carrange))
         
-        let timeOut = DispatchTime.now() + 10
+        let midx = UIScreen.main.bounds.size.width * 0.5
+        let midy = UIScreen.main.bounds.size.height * 0.5
+        
+        
+        let xrange: Range = 65..<375-65
+
+        let randomx = random(xrange)
+        let carView = UIImageView(image: carArray[randomcar])
+        carView.frame = CGRect(x:randomx,y:30,width:30,height:45)
+        self.view.addSubview(carView)
+            
+        self.dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
+        self.dynamicItemBehavior = UIDynamicItemBehavior(items:[carView])
+        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x:0,y:300), for: carView)
+        self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
+            
+        self.collisionBehavior = UICollisionBehavior(items:[carView])
+        //self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
+        self.dynamicAnimator.addBehavior(self.collisionBehavior)
+            
+        self.collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
+            
+        
+        
+        let timeOut = DispatchTime.now() + 5
         DispatchQueue.main.asyncAfter(deadline: timeOut) {
             // finish the game
             self.game_over.isHidden = false
             self.replay2.isHidden = false
             // self.carView.isHidden = true
+            carView.removeFromSuperview()
+            self.main_car.center.x = midx
+            self.main_car.center.y = (midy * 2) - 85
         }
         
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -22,6 +22,27 @@ class ViewController: UIViewController, subviewDelegate {
     var collisionBehavior: UICollisionBehavior!
     var dynamicItemBehavior: UIDynamicItemBehavior!
     
+    struct NUM {
+        static let W = UIScreen.main.bounds.width
+        static let H = UIScreen.main.bounds.height
+        static let midx = UIScreen.main.bounds.size.width * 0.5
+        static let midy = UIScreen.main.bounds.size.height * 0.5
+        static var score = 0
+        static var counter = 0
+    }
+    
+    struct CAR {
+        static let carArray = [UIImage(named: "car1.png")!,
+                               UIImage(named: "car2.png")!,
+                               UIImage(named: "car3.png")!,
+                               UIImage(named: "car4.png")!,
+                               UIImage(named: "car5.png")!,
+                               UIImage(named: "car6.png")!]
+    }
+    
+    struct LIST {
+        static var list = [UIImageView]()
+    }
     
     @IBOutlet weak var main_car: cocoa!
     @IBOutlet weak var debug: UILabel!
@@ -31,6 +52,9 @@ class ViewController: UIViewController, subviewDelegate {
     @IBAction func replay(_ sender: UIButton) {
         self.game_over.isHidden = true
         self.replay2.isHidden = true
+        NUM.score = 0
+        NUM.counter = 0
+        LIST.list = [UIImageView]()
         self.viewDidLoad()
         
     }
@@ -38,7 +62,9 @@ class ViewController: UIViewController, subviewDelegate {
     @IBOutlet weak var replay2: UIButton!
     
     func debug(text: String){
-        self.debug.text = text
+        
+        self.debug.text = String(NUM.score)
+        
     }
     
     func random(_ range:Range<Int>) -> Int{
@@ -48,8 +74,52 @@ class ViewController: UIViewController, subviewDelegate {
     func moveBoundary(){
         self.collisionBehavior.removeAllBoundaries()
         self.collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
+        for i in LIST.list {
+            if i.frame.intersects(self.main_car.frame) {
+                NUM.score -= 1
+            }
+        }
         
     }
+    
+    func generateCar() {
+    
+        let carrange: UInt32 = UInt32(CAR.carArray.count)
+        let randomcar = Int(arc4random_uniform(carrange))
+        let xrange: Range = Int(NUM.W*0.15)..<Int(NUM.W*0.78)
+        let randomx = random(xrange)
+        
+        let carView = UIImageView()
+        carView.image = CAR.carArray[randomcar]
+        carView.frame = CGRect(x:randomx,y:Int(NUM.W*0.1),width:Int(NUM.W*0.08),height:Int(NUM.W*0.12))
+        self.view.addSubview(carView)
+        LIST.list.append(carView)
+
+        if NUM.counter == 0{
+            dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
+        }
+        dynamicItemBehavior = UIDynamicItemBehavior(items:[carView])
+        dynamicItemBehavior.addLinearVelocity(CGPoint(x:0,y:Int(NUM.H*0.5)), for: carView)
+        dynamicAnimator.addBehavior(self.dynamicItemBehavior)
+        
+        collisionBehavior = UICollisionBehavior(items:LIST.list)
+        dynamicAnimator.addBehavior(self.collisionBehavior)
+        collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
+
+
+        NUM.score += 5
+        NUM.counter += 1
+        self.debug.text = String(NUM.score)
+        
+        let tmp = DispatchTime.now() + 1
+        DispatchQueue.main.asyncAfter(deadline: tmp) {
+            if (NUM.counter < 20 && NUM.counter != 999) {
+                self.generateCar()
+            }
+        }
+        
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,48 +152,23 @@ class ViewController: UIViewController, subviewDelegate {
         
         roadView.image = UIImage.animatedImage(with: imageArray, duration: 1)
         
-        var carArray = [UIImage(named: "car1.png")!,
-                        UIImage(named: "car2.png")!,
-                        UIImage(named: "car3.png")!,
-                        UIImage(named: "car4.png")!,
-                        UIImage(named: "car5.png")!,
-                        UIImage(named: "car6.png")!]
-        let carrange: UInt32 = UInt32(carArray.count)
-        let randomcar = Int(arc4random_uniform(carrange))
         
-        let midx = UIScreen.main.bounds.size.width * 0.5
-        let midy = UIScreen.main.bounds.size.height * 0.5
-        
-        
-        let xrange: Range = 65..<375-65
+        generateCar()
 
-        let randomx = random(xrange)
-        let carView = UIImageView(image: carArray[randomcar])
-        carView.frame = CGRect(x:randomx,y:30,width:30,height:45)
-        self.view.addSubview(carView)
-            
-        self.dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
-        self.dynamicItemBehavior = UIDynamicItemBehavior(items:[carView])
-        self.dynamicItemBehavior.addLinearVelocity(CGPoint(x:0,y:300), for: carView)
-        self.dynamicAnimator.addBehavior(self.dynamicItemBehavior)
-            
-        self.collisionBehavior = UICollisionBehavior(items:[carView])
-        //self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
-        self.dynamicAnimator.addBehavior(self.collisionBehavior)
-            
-        self.collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
-            
-        
-        
-        let timeOut = DispatchTime.now() + 5
+    
+        let timeOut = DispatchTime.now() + 20
         DispatchQueue.main.asyncAfter(deadline: timeOut) {
             // finish the game
+            NUM.counter = 999
             self.game_over.isHidden = false
             self.replay2.isHidden = false
+            self.view.bringSubview(toFront: self.replay2)
             // self.carView.isHidden = true
-            carView.removeFromSuperview()
-            self.main_car.center.x = midx
-            self.main_car.center.y = (midy * 2) - 85
+            for i in LIST.list {
+                i.removeFromSuperview()
+            }
+            self.main_car.center.x = NUM.W * 0.5
+            self.main_car.center.y = NUM.H * 0.87
         }
         
     }
@@ -137,4 +182,5 @@ class ViewController: UIViewController, subviewDelegate {
 
 
 }
+
 

@@ -36,9 +36,10 @@ class cocoa: UIImageView {
         
         self.center = CGPoint(x: self.center.x+dx, y: self.center.y+dy)
         
-        //let halfx = (self.superview?.bounds.size.width)! * 0.5
-        self.center.x = max(65, self.center.x)
-        self.center.x = min((self.superview?.bounds.size.width)! - 65, self.center.x)
+        let W = UIScreen.main.bounds.width
+        
+        self.center.x = max(W*0.18, self.center.x)
+        self.center.x = min(W*0.82, self.center.x)
 
         
         self.myDelegate?.moveBoundary()

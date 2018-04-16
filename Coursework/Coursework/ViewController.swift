@@ -25,8 +25,6 @@ class ViewController: UIViewController, subviewDelegate {
     struct NUM {
         static let W = UIScreen.main.bounds.width
         static let H = UIScreen.main.bounds.height
-        static let midx = UIScreen.main.bounds.size.width * 0.5
-        static let midy = UIScreen.main.bounds.size.height * 0.5
         static var score = 0
         static var counter = 0
     }
@@ -48,10 +46,14 @@ class ViewController: UIViewController, subviewDelegate {
     @IBOutlet weak var debug: UILabel!
     @IBOutlet weak var roadView: UIImageView!
     @IBOutlet weak var game_over: UIImageView!
+    @IBOutlet weak var Score: UILabel!
     
     @IBAction func replay(_ sender: UIButton) {
+        
         self.game_over.isHidden = true
         self.replay2.isHidden = true
+        self.Score.isHidden = true
+        self.main_car.isHidden = false
         NUM.score = 0
         NUM.counter = 0
         LIST.list = [UIImageView]()
@@ -84,36 +86,48 @@ class ViewController: UIViewController, subviewDelegate {
     
     func generateCar() {
     
-        let carrange: UInt32 = UInt32(CAR.carArray.count)
-        let randomcar = Int(arc4random_uniform(carrange))
-        let xrange: Range = Int(NUM.W*0.15)..<Int(NUM.W*0.78)
-        let randomx = random(xrange)
         
-        let carView = UIImageView()
-        carView.image = CAR.carArray[randomcar]
-        carView.frame = CGRect(x:randomx,y:Int(NUM.W*0.1),width:Int(NUM.W*0.08),height:Int(NUM.W*0.12))
-        self.view.addSubview(carView)
-        LIST.list.append(carView)
+        
+        let count = UInt32(2)
+        let randomNumber = Int(arc4random_uniform(count))
+        
+        for _ in 0...randomNumber {
+            
+            let carrange: UInt32 = UInt32(CAR.carArray.count)
+            let randomcar = Int(arc4random_uniform(carrange))
+            let xrange: Range = Int(NUM.W*0.15)..<Int(NUM.W*0.78)
+            let randomx = random(xrange)
+            
+            let vrange: Range = Int(NUM.H*0.35)..<Int(NUM.H*0.6)
+            let randomv = random(vrange)
+        
+            let carView = UIImageView()
+            carView.image = CAR.carArray[randomcar]
+            carView.frame = CGRect(x:CGFloat(randomx),y:NUM.W*0.1,width:NUM.W*0.08,height:NUM.W*0.12)
+            self.view.addSubview(carView)
+            LIST.list.append(carView)
 
-        if NUM.counter == 0{
+            if NUM.counter == 0{
             dynamicAnimator = UIDynamicAnimator(referenceView: self.view)
         }
-        dynamicItemBehavior = UIDynamicItemBehavior(items:[carView])
-        dynamicItemBehavior.addLinearVelocity(CGPoint(x:0,y:Int(NUM.H*0.5)), for: carView)
-        dynamicAnimator.addBehavior(self.dynamicItemBehavior)
         
-        collisionBehavior = UICollisionBehavior(items:LIST.list)
-        dynamicAnimator.addBehavior(self.collisionBehavior)
-        collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
+            dynamicItemBehavior = UIDynamicItemBehavior(items:[carView])
+            dynamicItemBehavior.addLinearVelocity(CGPoint(x:0,y:randomv), for: carView)
+            dynamicAnimator.addBehavior(self.dynamicItemBehavior)
+        
+            collisionBehavior = UICollisionBehavior(items:LIST.list)
+            dynamicAnimator.addBehavior(self.collisionBehavior)
+            collisionBehavior.addBoundary(withIdentifier: "anything" as NSCopying,  for: UIBezierPath(rect: self.main_car.frame))
+            
+            NUM.score += 5
+            NUM.counter += 1
+            self.debug.text = String(NUM.score)
+        }
 
 
-        NUM.score += 5
-        NUM.counter += 1
-        self.debug.text = String(NUM.score)
-        
-        let tmp = DispatchTime.now() + 1
+        let tmp = DispatchTime.now() + 2
         DispatchQueue.main.asyncAfter(deadline: tmp) {
-            if (NUM.counter < 20 && NUM.counter != 999) {
+            if (NUM.counter < 40 && NUM.counter != 999) {
                 self.generateCar()
             }
         }
@@ -150,8 +164,10 @@ class ViewController: UIViewController, subviewDelegate {
                       UIImage(named: "road19.png")!,
                       UIImage(named: "road20.png")!]
         
+        debug.frame = CGRect(x:NUM.W * 0.9,y:NUM.H * 0.05,width:NUM.W * 0.1,height:NUM.H * 0.1)
+        main_car.center = CGPoint(x: NUM.W * 0.5, y: NUM.H * 0.87)
         roadView.image = UIImage.animatedImage(with: imageArray, duration: 1)
-        
+        roadView.frame = CGRect(x:0,y:0,width:NUM.W,height:NUM.H)
         
         generateCar()
 
@@ -160,15 +176,22 @@ class ViewController: UIViewController, subviewDelegate {
         DispatchQueue.main.asyncAfter(deadline: timeOut) {
             // finish the game
             NUM.counter = 999
+            self.main_car.isHidden = true
+            self.roadView.image = UIImage()
+            self.game_over.frame = CGRect(x:0,y:0,width:NUM.W,height:NUM.H*0.3)
             self.game_over.isHidden = false
+            self.view.backgroundColor = UIColor.black
+            self.replay2.frame = CGRect(x: 0, y:0,width:NUM.W*0.3*1.4,height:NUM.H*0.17*1.4)
+            self.replay2.center = CGPoint(x: NUM.W*0.5, y:NUM.H*0.7)
             self.replay2.isHidden = false
+            self.Score.text = String(NUM.score) + " Score!"
+            self.Score.isHidden = false
             self.view.bringSubview(toFront: self.replay2)
             // self.carView.isHidden = true
             for i in LIST.list {
                 i.removeFromSuperview()
             }
-            self.main_car.center.x = NUM.W * 0.5
-            self.main_car.center.y = NUM.H * 0.87
+ 
         }
         
     }
